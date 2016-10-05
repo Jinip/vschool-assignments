@@ -1,0 +1,24 @@
+div{
+    height: 250px;
+    border: 10px solid white
+}
+
+.violet{
+    background-color: #F5C6D6;
+}
+
+.pink{
+    background-color: #EE2E84;
+}
+
+.blue{
+    background-color: #85CFD8;
+}
+
+.green{
+    background-color: #8DC63F;
+}
+
+.orange{
+    background-color: #E76E34;
+}

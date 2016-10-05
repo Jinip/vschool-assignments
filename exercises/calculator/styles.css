@@ -1,0 +1,25 @@
+body{
+    font-size: 25px;
+}
+p{
+    font-size: 22px;
+    display: inline-block;
+    width: 20px;
+    text-align: center;
+}
+
+label{
+    width: 165px;
+}
+button{
+    width: 75px;
+}
+input{
+    text-align: right;
+}
+.container{
+    margin-top: 50px;
+}
+.form-inline{
+    
+}

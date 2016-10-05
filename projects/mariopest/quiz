@@ -1,0 +1,221 @@
+Quiz 5
+
+1. What would get printed to the console if we ran the following code? 
+
+var name = “Joe”;
+
+function printName(){
+    var name = “Bob”   
+    return name;    
+}
+
+console.log(printName());
+console.log(name);
+
+"Bob"
+"Joe"
+
+2. This is because name = “Joe” is a ________ variable 
+
+Local
+Outer
+Global <--
+Inside
+
+3. And name = “Bob” is a _________ variable
+
+Local <--
+Outer
+Global
+Inside
+
+4. What would get printed to the console if we ran the following code? 
+
+var name = “Joe”;
+
+function printName(){
+    name = “Bob”   
+    return name;    
+}
+
+console.log(printName());
+console.log(name);
+
+"Bob"
+"Bob"
+
+5. This is because we are printing out the __________ variable twice
+
+Local 
+Outer
+Global <--
+Inside
+
+
+6. What will the following log to the console?
+
+if ((1 < 2) && ( 2 * 3 < 6 || false || 9 > 6)){
+  console.log("It is true!")
+} else {
+  console.log("It is false!")
+}
+
+"It is true!"
+
+
+Given the following object:
+
+var car = {
+    brand: “Honda”,
+    model: “Civic”,
+    numberOfDoors: 4,
+    automatic: true,
+    color: “blue”,
+    miles: 0,
+    function drive() {
+        this.miles ++;
+        return this.miles;
+    } 
+};
+
+7. How would we change the numberOfDoors in our car object?  
+
+car.numberOfDoors = val;
+
+
+8. How would we call the “drive” method in our “car” object?
+
+car.drive();
+
+
+9. Write a for loop that will console log the numbers 0 through 9. 
+
+for (var i = 0; i < 10; i++){
+    console.log(i);
+}
+
+
+10. Write a for loop that will print every string in the array: 
+
+fruits = [“apple”, “pear”, “chicken”, “banana”]
+
+Remember to make it so it works no matter how long the array is! 
+
+for (i = 0; i < fruits.length; i++){
+    console.log(fruits[i]);
+}
+
+
+
+--- 2 ---
+
+1. What JavaScript data type will the variable “thingFromClass” be if we have the following:
+   
+var thingFromClass = document.getElementsByClassName(“thing-from-class”);
+
+String
+Object 
+Array <---
+HTML Element
+
+
+2. What JavaScript data type will the variable “thing” be if we have the following: 
+
+var thing = document.getElementById(“thing-id-from-html”);
+
+String
+Object <--
+Array
+HTML Element
+
+
+
+3. Which of the following are properties of the the object “thing” if we have the following:
+
+var thing = document.getElementById(“thing-id-from-html”);
+
+innerHTML <--
+volume
+id <--
+candor
+
+
+
+4. Write a for loop that will print every string in the array: 
+
+fruits = [“apple”, “pear”, “chicken”, “banana”]
+
+Remember to make it so it works no matter how long the array is! 
+
+for (var i = 0; i < fruits.length; i++){
+    console.log(fruits[i]);
+}
+
+
+5. Which of the following is correct? 
+
+a.
+Do_something function();
+{
+console.log(i did something)
+}
+
+b. <--
+function doSomething() {
+    console.log(“i did something”);
+}
+
+c.
+function DoSomething:
+    console.log(“i did something”);
+
+d.
+function doSomething(){
+console.log(“i did something);
+} 
+
+
+6. Bootstrap is a _________ and ___________:
+
+JavaScript and HTML Framework
+CSS Library and Framework <--
+Open Source 
+Private
+
+
+7. To modify Bootstrap, we put the link to our CSS _________ the link to bootstrap
+
+Before 
+After <--
+Instead of
+Inside of
+
+
+8. We need to put the link to jQuery ________ the link to bootstrap’s javascript
+
+Before <--
+After
+Instead of
+Inside of
+
+
+9. Refer back to question 8. Why do we do this? 
+
+Bootstrap's Javascript contains jQeury code, which the interpreter won't be able to process unless it already has reference to jQuery.
+
+10. Google how to make a bootstrap button, and put the result for the answer to this question. 
+
+<button class="btn" type="submit">Submit</button>
+
+
+
+
+--- 3 ---
+
+function Building(buildingName, buildingColor, hasGarage, hasKitchen){
+    this.name = name;
+    this.color = buildingColor;
+    this.garage = hasGarage;
+    this.kitchen = hasKitchen || true;
+}
+
