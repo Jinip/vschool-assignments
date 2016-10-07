@@ -1,0 +1,12 @@
+body{
+    font-family: Helvetica;
+}
+td{
+    padding: 10px;
+    border: 1px solid darkblue;
+    
+}
+th{
+    border: 1px solid blue;
+    padding: 5px;
+}

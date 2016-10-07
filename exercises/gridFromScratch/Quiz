@@ -1,0 +1,17 @@
+1. What would get printed to the console if we ran the following code? 
+
+if ((1 < 2) && ( 2 * 3 < 6 || false || 9 > 6)){
+  console.log("It is true!")
+} else {
+  console.log("It is false!")
+}
+
+"It is true!"
+
+
+2. Label this box model. (padding, border, element, margin)
+
+element is at the center
+border outlines boundaries of elment plus
+padding, which is space between the content and the border,
+margin extends spacing beyond the border

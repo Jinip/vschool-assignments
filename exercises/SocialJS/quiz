@@ -1,0 +1,178 @@
+Match the following:
+
+Monospace                                        a. Hello World
+Serif                                                   b. Hello World
+Sans-Serif                                          c. Hello World
+
+1 c
+2 b
+3 a
+
+3. How would we select the class “special-link” only when the mouse is hovering over it? 
+
+.special-link:hover{}
+
+4. If your browser had all of the fonts, which font would be assigned to class=”familyTime” in the following code? 
+
+.familyTime {
+	Georgia, “Times New Roman”, Serif; 
+}
+
+Georgia
+
+5. Which of the following is correct? 
+
+a.
+Do_something function();
+{
+console.log(i did something)
+}
+
+b.
+function doSomething() {
+    console.log(“i did something”);
+}
+
+c.
+function DoSomething:
+    console.log(“i did something”);
+
+d.
+function doSomething(){
+console.log(“i did something);
+}
+
+B
+
+
+6. Which of the following bits of code need a semicolon(;)?
+
+a.
+var firstName = “Afir”  
+
+b.
+if (firstName){
+
+c.
+return true 
+
+d.
+}  
+(as in the end of a for loop)
+
+A and C
+
+
+7. In CSS, how would you make all the <h1> tags green when you hovered over them? 
+
+h1:hover{
+    color: green;
+}
+
+8. How do you link your stylesheet to your html file?
+
+<link href="styles.css" rel="stylesheet" type="text/css" />
+
+9. What color would the <p> tags be if we had the following code
+
+p {
+    color: red;
+}
+
+p {
+     color: green;
+}
+
+green
+
+
+10. What is the one thing wrong with the following code? 
+
+if (isIndented) {
+console.log(“Indent”);
+}
+
+console.log needs to be indented
+
+
+Given the following code:
+
+var fruits = ["Banana", "Orange", "Apple", "Mango", "Kiwi"];
+
+1. What will fruits[1] be? 
+
+"Orange"
+
+2. What would fruits.length be? 
+
+5
+
+3. What would fruits.indexOf(“Mango”) be? 
+
+3
+
+4. What will your fruits array look like at the end? 
+
+var fruits = ["Banana", "Orange", "Apple", "Mango", "Kiwi"];
+fruits = fruits.splice(2, 2);
+
+["Banana", "Orange", "Kiwi]
+
+Given the following object:
+
+var car = {
+    brand: “Honda”,
+    model: “Civic”,
+    numberOfDoors: 4,
+    automatic: true,
+    color: “blue”,
+    miles: 0,
+    function drive() {
+        miles ++;
+        return this.miles;
+    } 
+};
+
+5. Which of the following lines of code would print the color of our car to the console?
+console.log(car.color);  
+console.log(car>color);
+console.log(car['color']); 
+console.log(car=color);
+
+1 and 3
+
+6. How would we change the numberOfDoors in our car object?  
+
+car.numberOfDoors = value;
+
+7. How would we call the “drive” method in our “car” object? 
+
+car.drive();
+
+8.  Which of the following would create a new object in JavaScript? 
+var thing = create Object();
+var thing = new Object(); 
+var thing = { width: 100, height: 100};
+var thing = { width, 100 }{height, 100};
+
+2 and 3
+
+9. What is a function inside of an object called? 
+
+Method
+
+10. Label this box model. (padding, border, element, margin)
+
+
+
+        
+
+
+
+
+
+
+
+
+
+

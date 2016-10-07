@@ -1,0 +1,23 @@
+.column{
+    width: auto;
+    display: inline-block;
+    vertical-align: top;
+    padding: 5px;
+}
+section{
+    display: inline-block;
+}
+nav{
+
+    height: 600;
+    vertical-align: top;
+    display: inline-block
+}
+a{
+    text-decoration: none;
+    display: block;
+    line-height: 60px;
+    font-size: 50px;
+    margin: 50px 25px;
+    
+}
