@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Travel Form</title>
+    <link href="styles.css" rel="stylesheet"/>
+</head>
+<body>
+    <form id="travelForm">
+        <label for="firstName">Name</label> <br>
+        <input id="firstName" type="text" placeholder="First Name" />
+        <input id="lastName" type="text" placeholder="Last Name" /> <br>
+        
+        <label for="age">Age </label> <br>
+        <input id="age" type="number" placeholder="Age" /> <br>
+        
+        <label for="gender">Gender</label><br>
+        <input id="male" type="radio" name="gender" value="Male"/>
+        <label for="male">Male </label>
+        <input id="female" type="radio" name="gender" value="Female">
+        <label for="female">Female </label> <br>
+        
+        <label for="destination">Destination </label> <br>
+        <select id="destination">
+            <option value="Dubai">Dubai</option>
+            <option value="Salt Lake City">Salt Lake City</option>
+            <option value="San Francisco">San Francisco</option>
+        </select> <br>
+        
+        <label for="diet">Dietary Restrictions</label> <br>
+        <input type="checkbox" name="diet" value="Vegetarian"> Vegetarian
+        <input type="checkbox" name="diet" value="Kosher"> Kosher
+        <input type="checkbox" name="diet" value="Lactose Free"> Lactose Free <br>
+        
+        <button id="submit" type="button">Submit</button>
+        
+        <script src="script.js"></script>
+    </form>
+</body>
+</html>

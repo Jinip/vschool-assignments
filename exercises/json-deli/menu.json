@@ -1,0 +1,63 @@
+{
+    "appetizers": [
+        {
+            "name": "Chicken Fingers",
+            "ingredients": ["chicken tenders", "batter", "oil", "Marinara Sauce", "Pickle spear"],
+            "description": "Six lightly-fried chicken tenders served with marinara sauce and a pickle spear"
+        },
+        {
+            "name": "Jalapeno Poppers",
+            "ingredients": ["sliced jalapenos", "cream chees"],
+            "description:": "Six baked jalapeno poppers stuff with cream cheese"
+        }
+    ],
+    "cold_sands": [
+        {
+            "name": "BLT",
+            "ingredients": ["bun", "bacon slices", "lettuce", "tomato"],
+            "description": "Delicious BLT served with a side of fries and a drink"
+        },
+        {
+            "name": "Cold Cut",
+            "ingredients": ["ham", "salami", "bologna", "bun", "mixed veggies"],
+            "description": "Cold cut combo of ham, salami, and bologna served on the bread of your choice"
+        }
+    ],
+    "hot_sands": [
+        {
+            "name": "Good Old Grilled Cheese",
+            "ingredients": ["white bread", "cheese"],
+            "description": "Grilled cheese just the way your mom makes it"
+        },
+        {
+            "name": "Grilled Turkey Sandwich",
+            "ingredients": ["grilled turkey", "lettuce", "tomato", "mayo"],
+            "description": "Grilled turkey sandwich served with your choice of side"
+        }
+
+    ],
+    "desserts": [
+        {
+            "name": "Peach Tart",
+            "ingredients": ["pie crust", "peach filling", "whipped cream"],
+            "description": "Fresh baked peach tart topped with whipped cream"
+        },
+        {
+            "name": "Hot Fudge Sundae",
+            "ingredients": ["fudge", "vanilla ice cream", "peanuts"],
+            "description": "Vanilla ice cream topped with hot fudge and chopped peanuts"
+        }
+    ],
+    "drinks": [
+        {
+            "name": "Green Tea",
+            "ingredients": ["green tea"],
+            "description": "Green tea"
+        },
+        {
+            "name": "Strawberry Milkshake",
+            "ingredients": ["strawberries", "vanilla ice cream"],
+            "description": "Blended vanilla ice cream with just the right amount of small strawberry chunks"
+        }
+    ]
+}

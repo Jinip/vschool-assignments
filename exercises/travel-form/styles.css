@@ -1,0 +1,26 @@
+form{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+input, select{
+    margin: 10px 0px 15px;
+}
+
+label{
+    font-size: 20px;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+input{
+    font-size: 20px;
+}
+
+select{
+    font-size: 30px;
+}
+
+button{
+    margin-top: 10px;
+    font-size: 20px
+}
