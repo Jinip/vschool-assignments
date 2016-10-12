@@ -107,6 +107,10 @@ console.log("\n\n\nWelcome to Tay Tay Attack!\n")
 
 var name = readline.question("What's your name? ");
 
+if (name = "Gyllenhaal") {
+    var player = new Player(name, 100, [items.exBoy, items.girlPower, items.thickSkin, items.sass])
+}
+
 var player = new Player(name, 100);
 
 var enemy = new Enemy(enemyList[0]);
@@ -119,7 +123,7 @@ var winning = true;
 var turn = 0;
 
 
-while (winning && turn < 3){
+while (winning && turn < 4){
     console.log("\nT-Swift has " + player.hp());
     var response = readline.question("How we gonna roll?\n\tStrut your stuff (w) \n\tCheck her pockets (print) \n\tExit (exit) ", {limit: ["w", "print", "exit"], limitMessage: "\nOh, Tay Tay, you cray cray. Try again!"});
 
@@ -163,7 +167,7 @@ function battle(){
     
     while((player.health > 0 || enemy.health > 0))
     {
-        console.log("Taylor has " + player.hp() + " million fans left");
+        console.log("Taylor has " + player.hp() + " million fans left and the " + enemy.name + " have " + enemy.health + " points of confidence left");
         var response = readline.question("What should Taylor do? \n\tPut those punks down! (a) \n\tCheck her pockets (print) \n\tIgnore them (run) ", {limit: ["a", "print", "run"], limitMessage: "\nOh, Tay Tay, you cray cray. Try again!" });
         
         if (response === "a"){
