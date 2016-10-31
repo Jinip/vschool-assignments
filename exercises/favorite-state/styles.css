@@ -1,0 +1,39 @@
+nav{
+    background-color: #003366;
+}
+
+a{
+    color: white;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+h1{
+    text-align: center;
+}
+
+a img{
+    width: 11px;
+    height: 11px;
+}
+
+p a{
+    color: #003366;
+
+}
+
+p a:hover{
+    text-decoration: none;
+    cursor: text;
+}
+
+.mike{
+    position: absolute;
+    width: 150px;
+    height: auto;
+}

@@ -1,0 +1,158 @@
+html{
+    position: relative;
+    min-height: 100%;
+    padding-top: 50px;
+    overflow: scroll;
+}
+
+body{
+    height: 100%;
+    background-image: url("/images/backgrounds/background_girl_edit_gimp.jpg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-attachment: fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+    transition: 1s;
+    
+    color: white;
+    font-family: calligraphy;
+}
+
+.navbar{
+    background-color: #271D49;
+    font-size: 25px;
+    transition: 1s;
+}
+
+.navbar-default{
+    background-color: #271D49;
+    transition: 1s;
+}
+
+span.icon-bar{
+    background-color: white;
+}
+
+.nav>li>a:hover, .nav>li>a:focus{
+    background-color: transparent;
+}
+
+a{
+    color: white;
+}
+
+.form-control{
+    font-family: fantasy;
+}
+
+label{
+    font-size: 25px;
+}
+
+.btn{
+    font-size: 25px;
+    background-color: rgb(216,31,58); 
+}
+
+.input-group{
+    width: 100%;
+}
+
+.navbar-brand{
+    color: white;
+    font-size: 30px;
+    
+}
+
+.navbar-brand:hover{
+    cursor:default;
+    color: white;
+}
+
+
+.navbar-nav>li{
+    padding: 0px 10px
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: white;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active {
+    color: #271D49;
+}
+
+
+h1, h3, p{
+    text-align: center;
+}
+
+h1{
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+h3{
+    border-top: 0px;
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+p{
+    font-family: fantasy;
+}
+
+.content{
+    top: 20px;
+    position: absolute;
+    width: 100%;
+}
+
+.main{
+    position: relative;
+}
+
+.img-container{
+    padding: 0 auto;
+    margin-bottom: 20px;
+}
+.img{
+    width: 100%;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 0 0 5px 5px rgba(50,50,50,0.5);
+}
+
+@font-face{
+    font-family: calligraphy;
+    src: url(ankecallig-fg.ttf);
+}
+
+@media screen and (max-width: 768px){
+    h1{
+        font-size: 55px;
+    }
+    h3{
+        font-size: 25px;
+    }
+    p{
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    h1{
+        font-size: 80px;
+    }
+    h3{
+        font-size: 30px;
+    }
+    p{
+        font-size: 32px;
+    }
+}

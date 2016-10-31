@@ -1,0 +1,43 @@
+body{
+    background-color: lightsteelblue;
+}
+
+.nav{
+    font-size: 18px;
+}
+
+.navbar-brand{
+    font-size: 20px;
+}
+
+.item-image{
+    width: 100%;
+}
+
+.navbar{
+    background-color: black;
+}
+
+a{
+    color: lightsteelblue
+}
+
+a:hover{
+    color: black;
+}
+
+.nav-item:hover{
+    color: white;
+}
+
+.item-border{
+    padding: 5px;
+    background-color: black;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+figcaption{
+    text-align: center;
+    color: white;
+}

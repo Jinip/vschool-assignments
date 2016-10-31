@@ -1,0 +1,23 @@
+.header{
+    text-align: center;
+}
+
+body{
+    background-color: rgba(0,0,0,0);
+    color: white;
+    font-family: jedi;
+    letter-spacing: 3px;
+}
+
+html {
+    background: url("Screen-Shot-2015-04-08-at-4.31.55-PM-2400x1200-699742151983_gimp.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+@font-face {
+    font-family: jedi;
+    src: url("Death Star.otf");
+}

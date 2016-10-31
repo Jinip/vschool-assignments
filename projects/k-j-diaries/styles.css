@@ -1,0 +1,266 @@
+section{
+    position: relative;
+}
+
+.container{
+    padding: 0 15px;
+}
+
+#logo{
+    margin-left: 10px;
+}
+
+ul, li{
+    display: inline-block;
+}
+
+ul{
+    padding-left: 0;
+    margin-top: 10px;
+    margin-left: 25px;
+}
+
+li{
+    margin: 0 60px 0 0;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+nav{
+    font-family: Avenir;
+    height: 120px;
+}
+
+.jumbo{
+    overflow: hidden;
+}
+
+.jumbo>img{
+    width: 100%;
+    margin-bottom: -130px;
+}
+
+.jumbo-footer{
+    background-color: #FDE6DA;
+    height: 68px;
+    padding-top: 18px;
+    text-align: center
+}
+
+.jumbo-footer>input{
+    width: 85%;
+    padding-left: 0px;
+}
+
+.email-button{
+    background-color: white;
+    padding: 3px 50px;
+    margin: 0;
+    border: 0;
+}
+
+.article-img{
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.highlight{
+    display: inline-block;
+    border-bottom: 1px solid #dddddd;
+    width: 15%;
+    margin-bottom: 2px;
+}
+
+.post-date{
+    display: block;
+    text-align: center;
+}
+.article-date{
+    display: inline-block;
+    font-size: 12px;
+    color: #999999;
+    font-weight: 200;
+    font-family: Avenir;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.article-title{
+    color: #000;
+    font-size: 26px;
+    font-weight: 500;
+    letter-spacing: .2em;
+    line-height: 33px;
+    text-align: center;
+    font-family: "Bebas Neue Regular", sans-serif;
+    margin-bottom: 18px;
+    margin-top: 15px
+}
+
+.article-tags{
+    text-align: center;
+    font-size: 14px;
+    color: #999;
+    font-weight: 200;
+    font-style: italic;
+    font-family: Avenir;
+    line-height: 20px;
+    margin-bottom: 30px;
+}
+
+.article-intro{
+    font-weight: 400;
+    color: #545454;
+    line-height: 20px;
+    font-family: Avenir;
+    font-size: 14px;
+}
+
+.read-more{
+    text-align: center;
+}
+
+.btn-read-more{
+    margin-top: 20px;
+    margin-bottom: 51px;
+    padding: 10px;
+    color: #ccc;
+    font-family: sans-serif;
+    text-align: center;
+    background-color: white;
+    border: 1px solid #ccc;
+    letter-spacing: .1em;
+    font-weight: 100;
+    transition: all .2s;
+}
+
+.btn-read-more:hover{
+    background-color: #aaaaaa;
+    color: white;
+}
+
+.article-footer{
+    width: 100%;
+}
+
+.social-bar{
+    position: relative;
+    text-align: right;
+    margin-bottom: 36px;
+}
+.social-links{
+    font-size: 30px;
+    color: #f3c3ac;
+    letter-spacing: .4em;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+}
+.article-comments{
+    color: #333;
+    line-height: 20px;
+    font-weight: 400;
+    font-size: 13px;
+    font-family: Avenir;
+    display: inline-block;    
+}
+
+.num-comments{
+    font-weight: 600;
+    font-style: italic;
+    margin-right: 2px;
+}
+
+.article-related{
+    position: relative;
+    border-top: 1px solid #aaaaaa;
+    border-bottom: 1px solid #545454;
+    text-align: center;
+    padding: 15px;
+    letter-spacing: 3.1em;
+    font-family: sans-serif;
+}
+
+.article-related>h3{
+    margin: -28px auto 3px;
+    font-weight: 200;
+    padding: 0 5px;
+    color: #000;
+    background-color: white;
+    font-size: 24px;
+    letter-spacing: .1em;
+    width: 125px
+}
+
+.page-header{
+    margin-bottom: 110px
+}
+
+.aside img{
+    padding: 0px 10px;
+    width: 100%;
+}
+
+.aside{
+    margin-top: 50px;
+}
+
+#follow{
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding-top: 20px;
+    font-family: sans-serif;
+    letter-spacing: .6em;
+}
+
+#follow>i{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#follow>h4{
+    margin: -30px auto 3px;
+    font-weight: 200;
+    padding: 0 5px;
+    color: #000;
+    background-color: white;
+    letter-spacing: .1em;
+    width: 92px
+}
+
+#subscribe{
+    margin-top: 50px;
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding-top: 20px;
+    font-family: sans-serif;
+}
+
+#subscribe>h4{
+    margin: -30px auto 3px;
+    font-weight: 200;
+    padding: 0 5px;
+    color: #000;
+    background-color: white;
+    letter-spacing: .1em;
+    width: 92px
+}
+
+#favorites{
+    position: relative;
+    border-top: 1px solid #aaaaaa;
+    border-bottom: 1px solid #545454;
+    text-align: center;
+    padding: 15px;
+    letter-spacing: 3.1em;
+    font-family: sans-serif;
+}
+
+.email{
+    font: normal normal normal 14px/1 FontAwesome;
+}
+
+@media screen {}

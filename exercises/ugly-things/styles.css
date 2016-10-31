@@ -1,0 +1,46 @@
+body{
+    background-color: brown;
+}
+
+.title{
+    text-align: center;
+    background-color: darkkhaki;
+    box-shadow: 0 0 2px 2px darkkhaki;
+    overflow: hidden;
+}
+
+.pic{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.desc{
+    text-align: center;
+    background-color: darkgreen;
+    box-shadow: 0 0 2px 2px darkgreen;
+    overflow: hidden;
+}
+
+form{
+    text-align: center;
+    margin: 20px;
+}
+
+.ugly-thing{
+    font-family: yuck;
+    color: white;
+    border: 5px solid green;
+    background-color: burlywood;
+    box-shadow: 0 0 2px 2px green;
+    
+}
+
+@font-face {
+    font-family: yuck;
+    src: url("Scary_Halloween_Font.ttf");
+}
+
+h1{
+    text-align: right;
+    cursor: pointer;
+}

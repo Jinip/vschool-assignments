@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Wish List</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <ul class="nav navbar-nav">
+           <li><a href="" class="navbar-brand hidden-xs">Wish List</a></li>
+            <li class="nav-item">
+                <a class="nav-link" href="#/tools">Tools</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#/toys">Toys</a>
+            </li>
+        </ul>
+    </nav>
+
+    <ng-view></ng-view>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.js"></script>
+    
+    <script src="app.js"></script>
+    <script src="components/directives/wish-list-item/wish-list-item.js"></script>
+    <script src="components/tools/tools.js"></script>
+    <script src="components/toys/toys.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+body{
+    background-color: black;
+}
+
+div{
+    position: absolute;
+}
+
+.crawl{
+    color: yellow;
+/*    top: 1000px;*/
+/*
+    position: relative;
+    transition: 10s;
+    transform: rotateX(45deg);
+    perspective: 
+    transform-origin: 50% 100%; 
+*/
+    top: auto;
+    bottom: 0;
+  	height: 50em;
+  	font-size: 350%;
+  	text-align: justify;
+    overflow: hidden;
+    transform-origin: 50% 100%;
+    @include transform(perspective(300px) rotateX(25deg));
+}

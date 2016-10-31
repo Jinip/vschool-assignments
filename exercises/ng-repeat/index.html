@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>ng-repeat</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body ng-controller="main">
+    
+    <div ng-repeat="kill in player.kills">
+        <h1>Kill: {{ kill.handle }}</h1>
+        <h2>Rank: {{ kill.rank }}</h2>
+        <h3>Clan Memebers</h3>
+        <ul>
+            <li ng-repeat="clanMember in kill.clan">{{ clanMember }}</li>
+        </ul>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+input {
+    display: block;
+    width: 50%;
+}
+
+.well{
+    overflow: scroll;
+}

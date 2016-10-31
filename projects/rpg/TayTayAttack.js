@@ -108,10 +108,10 @@ console.log("\n\n\nWelcome to Tay Tay Attack!\n")
 var name = readline.question("What's your name? ");
 
 if (name = "Gyllenhaal") {
-    var player = new Player(name, 100, [items.exBoy, items.girlPower, items.thickSkin, items.sass])
+    var player = new Player(name, 100, [new Item(items.exBoy), new Item(items.girlPower), new Item(items.thickSkin), new Item(items.sass)])
+} else {
+    var player = new Player(name, 100);
 }
-
-var player = new Player(name, 100);
 
 var enemy = new Enemy(enemyList[0]);
 
@@ -161,13 +161,14 @@ if (winning === true){
 
 
 function battle(){
+    var battling = true;
     var enemy = new Enemy(enemyList[Math.floor(Math.random() * 4)]);
     
     console.log("\n\n" + enemy.intro + "\n");
     
     while((player.health > 0 || enemy.health > 0))
     {
-        console.log("Taylor has " + player.hp() + " million fans left and the " + enemy.name + " have " + enemy.health + " points of confidence left");
+        console.log("Taylor: " + player.hp() + " ---- " + enemy.name + ": " + enemy.health + " points of confidence");
         var response = readline.question("What should Taylor do? \n\tPut those punks down! (a) \n\tCheck her pockets (print) \n\tIgnore them (run) ", {limit: ["a", "print", "run"], limitMessage: "\nOh, Tay Tay, you cray cray. Try again!" });
         
         if (response === "a"){
@@ -189,7 +190,7 @@ function battle(){
             }
         } else {
             
-            printInventory();
+            printInventory(battling);
             
         } 
         
@@ -244,7 +245,7 @@ function dropItem(){
 }
 
 function printInventory(battling){
-    console.log("\n" + player.name);
+    console.log("\nName: " + player.name);
     console.log("Taylor has " + player.hp());
     console.log("Inventory -----");
     var selectedItem;

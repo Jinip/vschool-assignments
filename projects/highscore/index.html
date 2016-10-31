@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+       <div class="row">
+           <div class="col-xs-12">
+               <h1>High Score Haven</h1>
+           </div>
+       </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="table-div">
+                    <table id="scoreTable" class="table">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Game</th>
+                                <th>Date</th>
+                                <th>Score</th>
+                                <th>Comment</th>
+                            </tr>
+                        </thead>
+                        <tbody id="table-body">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12">
+                <form class="form-inline">
+                    <div class="form-group">
+                        <input class="form-control" id="name" type="text" placeholder="Name">
+                    </div>
+
+                    <div class="form-group">
+                        <input class="form-control" id="game" type="text" placeholder="Game">
+                    </div>
+
+                    <div class="form-group">
+                        <input class="form-control" id="date" type="date">
+                    </div>
+
+                    <div class="form-group">
+                        <input class="form-control" id="score" type="number" placeholder="Score">
+                    </div>
+
+                    <label for="addTalk">Add Trash Talk</label>
+                    <input class="form-check" id="addTalk" type="checkbox" value="Add Trash Talk">
+
+                    <div class="form-row">
+                        <button class="btn btn-danger btn-block" id="submit" type="button">Submit</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

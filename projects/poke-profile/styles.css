@@ -1,0 +1,23 @@
+html {
+    background: url("http://wallpapercave.com/wp/aaKinnJ.png") no-repeat center right fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+img {
+    width: 50%
+}
+
+body{
+    background-color: rgba(0,0,0,0);
+}
+
+.search{
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}

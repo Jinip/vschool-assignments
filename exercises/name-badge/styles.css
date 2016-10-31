@@ -1,0 +1,21 @@
+.content{
+    padding: 30px;
+    border: 2px solid lightgrey;
+    border-radius: 15px;
+}
+
+.name-badge{
+    margin-top: 25px;
+    border: 2px solid lightgrey;
+    border-radius: 15px;
+}
+
+
+.badge-header{
+    background-color: lightgray;
+    border-radius: 10px;
+}
+
+.badge-content{
+    padding: 30px;
+}

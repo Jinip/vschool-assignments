@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Name Badge</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body ng-controller="main">
+
+    <div class="container">
+        <div class="row">
+            <div class="content col-xs-8 col-xs-offset-2">
+                <form name="badgeForm" ng-submit="newBadge()">
+                    <div class="row">
+                        <div class="col-xs-6 form-group">
+                            <input ng-model="badge.fName" class="form-control" type="text" placeholder="First Name" ng-required="true" required>
+                        </div>
+                        <div class="col-xs-6 form-group">
+                            <input ng-model="badge.lName" class="form-control" type="text" placeholder="Last Name" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-6 form-group">
+                            <input ng-model="badge.email" class="form-control" type="email" placeholder="Email" required>
+                        </div>
+                        <div class="col-xs-6 form-group">
+                            <input ng-model="badge.birthPlace" class="form-control" placeholder="Place of Birth" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-6 form-group">
+                            <input ng-model="badge.phone" class="form-control" type="phone" ng-minlength="10" ng-maxlength="10" placeholder="Phone" required>
+                        </div>
+                        <div class="col-xs-6 form-group">
+                            <input ng-model="badge.favFood" class="form-control" type="text" placeholder="Favorite Food" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 form-group">
+                            <input ng-model="badge.about" class="form-control" type="textarea" placeholder="Tell us about yourself" required>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary center-block" type="submit" ng-disabled="badgeForm.$invalid">Submit</button>
+                </form>
+            </div>
+        </div>
+
+        <div ng-repeat="badge in badges" class="row">
+            <div class="col-xs-8 col-xs-offset-2 name-badge">
+                <div class="row">
+                    <div class="col-xs-12 badge-header">
+                        <h3>Badge:</h3>
+                    </div>
+                </div>
+                <div class="badge-content">
+                    <div class="row">
+                        <div class="col-xs-6 form-group">
+                            <h4>First Name: {{badge.fName}}</h4>
+                        </div>
+                        <div class="col-xs-6 form-group">
+                            <h4>Last Name: {{badge.lName}}</h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-6 form-group">
+                            <h4>Email: {{badge.email}}</h4>
+                        </div>
+                        <div class="col-xs-6 form-group">
+                            <h4>Place of Birth: {{badge.birthPlace}}</h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-6 form-group">
+                            <h4>Phone: {{badge.phone}}</h4>
+                        </div>
+                        <div class="col-xs-6 form-group">
+                            <h4>Favorite Food: {{badge.favFood}}</h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 form-group">
+                            <h4>About Me: {{badge.about}}</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

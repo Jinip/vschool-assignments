@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>Poke Profile</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body ng-controller="pokeController">
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-8 col-xs-offset-2 search">
+                <h2>Search Pokemon by Number</h2>
+                <input type="number" ng-model="pokeNum">
+                <input type="button" ng-click="findPoke(pokeNum)" value="Search Pokemon">
+                <br>
+                <h1 ng-show="poke.name">{{poke.name}}</h1>
+                <h3 ng-show="poke.ability">Ability: {{poke.ability}}</h3>
+                <img ng-show="poke.spriteUrl" ng-src="{{poke.spriteUrl}}">
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.js"></script>
+    <script src="app.js"></script>
+    <script src="PokeService.js"></script>
+</body>
+</html>

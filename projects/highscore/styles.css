@@ -1,0 +1,47 @@
+html {
+    background: url("http://img.wallpaperfolder.com/f/48F51E206607/nes-controller-1920x1080-id-42235.jpg") no-repeat right center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body {
+    font-family: NES;
+    word-spacing: 5px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+h1 {
+    text-align: center;
+}
+
+label {
+    margin-right: 10px;
+}
+
+input {
+    margin-right: 15px;
+}
+
+.table-div {
+    margin: 20px 0px;
+    height: 230px;
+    overflow: auto;
+    background-color: black;
+}
+
+.form-inline {
+    text-align: center;
+    background-color: black;
+}
+
+.btn-block {
+    margin-top: 15px;
+}
+
+@font-face{
+    font-family: NES;
+    src: url(NES-Logo.ttf);
+}
