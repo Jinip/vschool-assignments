@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-3">
+            <ul class="nav-tree">
+                <li ng-repeat="category in inventoryNav.categories">
+                    <a href="#/shop/{{ category.name }}">{{ category.name }}</a>
+                    <ul class="item-list">
+                        <li ng-repeat="subCategory in category.subCategories">
+                            <a href="#/shop/{{ category.name }}/{{ subCategory }}">{{ subCategory }}</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="col-xs-3 shop-item" ng-repeat="item in display">
+            <img class="item-img" src="{{ item.imgUrl }}" alt="">
+            <h5>{{ item.name }}</h5>
+            <p>${{ item.price }}</p>
+        </div>
+    </div>
+</div>

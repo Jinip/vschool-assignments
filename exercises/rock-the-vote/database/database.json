@@ -1,0 +1,22 @@
+{
+    "issues": [
+        {
+            "title": "Build the Wall",
+            "description": "Totally feasible idea!",
+            "id": "d467231d-5e80-4f34-9ca2-86ee71ca28bd",
+            "votes": {
+                "upvotes": 15,
+                "downvotes": 8
+            }
+        },
+        {
+            "title": "More",
+            "description": "Issues",
+            "id": "aec5a482-ebf2-4fd5-a08a-3f408523faa3",
+            "votes": {
+                "upvotes": 13,
+                "downvotes": 5
+            }
+        }
+    ]
+}

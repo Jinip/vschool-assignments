@@ -1,0 +1,53 @@
+<!--
+<div ng-repeat="bounty in service.bountyList">
+    <h1>{{bounty.fName}} {{bounty.lName}}</h1>
+    <h3>Type: {{bounty.type}}</h3>
+    <p>Bounty: {{bounty.bounty}}</p>
+    <p>Living: {{bounty.living}}</p>
+</div>
+-->
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-10 col-xs-offset-1">
+            <div class="col-xs-12 col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4>New Bounty</h4>
+                    </div>
+                    <div class="panel-body">
+                        <p>First Name: </p>
+                        <input type="text" ng-model="newBounty.fName">
+                        <p>Last Name: </p>
+                        <input type="text" ng-model="newBounty.lName">
+                        <p>Type: </p>
+                        <input type="text" ng-model="newBounty.type">
+                        <p>Bounty: </p>
+                        <input type="number" ng-model="newBounty.bounty">
+                        <button class="btn btn-primary btn-block" ng-click="submitBounty(newBounty)">Add New Bounty</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-8">
+                <div class="bounty col-xs-6" ng-repeat="bounty in service.bountyList">
+                    <div class="panel panel-danger">
+                        <div class="panel-heading">
+                            <h5 ng-class="{strike: !bounty.living}">{{bounty.fName}} {{bounty.lName}}</h5>
+                        </div>
+                        <div class="panel-body">
+                            <h5>Bounty: {{bounty.bounty}}</h5>
+                            <p>Type: {{bounty.type}}</p>
+                            <p>Living: {{bounty.living}}</p>
+                            
+                            <a class="edit-btn" ng-hide="editing" ng-click="editing = !editing">Edit</a>
+                            <a class="save-btn" ng-show="editing" ng-click="editing = !editing; updateBounty(bounty)">Save</a>
+                            <a class="delete-btn" ng-show="editing" ng-click="editing = !editing; deleteBounty(bounty, $index)">Delete</a>
+                            <button class="btn btn-danger pull-right" ng-click="bounty.living = !bounty.living; updateBounty(bounty)">Complete</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

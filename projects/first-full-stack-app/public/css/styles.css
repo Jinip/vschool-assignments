@@ -1,0 +1,43 @@
+.header {
+    background: url("http://image.desk7.net/Plant%20Wallpapers/7370_1280x800.jpg") no-repeat center center fixed;
+    background-size: cover;
+    height: 120px;
+}
+
+.section-summary{
+    text-align: center;
+}
+
+.company-title {
+    color: white;
+    text-align: right;
+    position: relative;
+}
+
+.company-title h1{
+    display: inline;
+    position: absolute;
+}
+
+.logo {
+    font-family: Zodiac;
+    font-size: 80px;
+    top: 0;
+    right: 20px;
+}
+
+.brand {
+    top: 18px;
+    right: 120px;
+}
+
+
+
+.item-img {
+    width: 100%;
+}
+
+@font-face {
+    font-family: Zodiac;
+    src: url("../fonts/GEZODIAC.TTF");
+}

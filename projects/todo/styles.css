@@ -1,12 +1,34 @@
-.item{
-    margin-bottom: 5px;
+.panel-heading{
+    text-align: center;
 }
 
-.header{
-    padding-right: 0;
+.panel-body{
+    position: relative;
 }
 
-.checkbox{
-    padding-left: 0;
-    margin: 0;
+.edit-btn, .save-btn{
+    position: absolute;
+    right: 15px;
+    top: 10px;
+}
+
+.delete-btn{
+    position: absolute;
+    right: 55px;
+    top: 10px;
+}
+
+input{
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
+.strike{
+    text-decoration: line-through;
 }

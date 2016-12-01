@@ -1,5 +1,5 @@
 function monkeyTrouble(a, b){
-   return a === b ? true : false;
+   return a === b;
 }
 
 console.log(monkeyTrouble(true, true));

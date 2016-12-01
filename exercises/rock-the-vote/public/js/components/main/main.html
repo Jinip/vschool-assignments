@@ -1,0 +1,51 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-8 col-xs-offset-2">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4>New Issue</h4>
+                </div>
+                <div class="panel-body">
+                    <p>Title: </p>
+                    <input type="text" ng-model="newIssue.title">
+                    <p>Description: </p>
+                    <input type="text" ng-model="newIssue.description">
+                    <button class="btn btn-primary btn-block" ng-click="createNewIssue(newIssue)">Add New Issue</button>
+                </div>
+            </div>
+
+            <div class="issue" ng-repeat="issue in service.issues">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h4 class="title" ng-hide="editing">{{issue.title}}</h4>
+                        <input type="text" ng-model="issue.title" ng-show="editing">
+                        
+                        <button class="btn btn-success edit-btn edit-edit" ng-click="editing = !editing" ng-hide="editing"><span class="glyphicon glyphicon-pencil"></span></button>
+                        
+                        <button class="btn btn-success edit-btn edit-save" ng-click="editing = !editing; updateIssue(issue)" ng-show="editing"><span class="glyphicon glyphicon-save"></span></button>
+                        
+                        <button class="btn btn-danger edit-btn edit-delete" ng-click="deleteIssue(issue)"><span class="glyphicon glyphicon-remove"></span></button>
+                    </div>
+                    <div class="panel-body">
+                        <h4 ng-hide="editing">{{issue.description}}</h4>
+                        <input type="text" ng-model="issue.description" ng-show="editing">
+                        
+                        <div class="vote-bar">
+                           <button class="btn btn-danger" ng-click="vote(issue, 'down', $index)"><span class="glyphicon glyphicon-arrow-down"></span></button>
+                           
+                           <h5 class="downvotes">{{issue.votes.downvotes}}</h5>
+                           
+                           <h3 class="total-votes">{{issue.votes.upvotes - issue.votes.downvotes}}</h3>
+                           
+                           <h5 class="upvotes">{{issue.votes.upvotes}}</h5>
+                            <button class="btn btn-success" ng-click="vote(issue, 'up', $index)"><span class="glyphicon glyphicon-arrow-up"></span></button>
+
+                            
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

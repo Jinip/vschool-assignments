@@ -11,29 +11,49 @@
 <body ng-controller="main">
 
     <div class="container">
-        <div ng-repeat="item in data track by $index">
-            <div class="row item">
-                <div class="col-xs-6 col-xs-offset-2 header">
-                    <button type="button" class="btn btn-lg btn-primary btn-block" data-toggle="collapse" href="#collapse{{$index}}" aria-expanded="false" aria-controls="collapse{{$index}}">{{item.title}}</button>
-                    <div id="collapse{{$index}}" class="collapse in">
+        <div class="row">
+            <div class="col-xs-6 col-centered">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h4>Add New Todo</h4>
+                    </div>
+                    <div class="panel-body">
+
+                        <label>Title: </label>
+                        <input type="text" ng-model="newItem.title">
+                        <label>Description: </label>
+                        <input type="text" ng-model="newItem.description">
+                        <label>Price: </label>
+                        <input type="number" ng-model="newItem.price">
+                        <button class="btn btn-primary pull-right" ng-click="createTodo(newItem)">Add Todo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--    <div ng-repeat="item in data track by $index">-->
+        <div class="row" ng-repeat="item in data track by $index">
+            <div class="col-xs-6 col-centered">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h4 ng-hide="editing" ng-class="{strike: item.completed}">{{item.title}}</h4>
+                    </div>
+                    <div class="panel-body">
                         <h4 ng-hide="editing">Description: {{item.description}}</h4>
                         <h4 ng-show="item.price" ng-hide="editing">Price: ${{item.price}}</h4>
-                        
+
                         <label ng-show="editing">Title: </label>
                         <input type="text" ng-model="item.title" ng-show="editing">
                         <label ng-show="editing">Description: </label>
                         <input type="text" ng-model="item.description" ng-show="editing">
                         <label ng-show="editing">Price: </label>
                         <input type="number" ng-model="item.price" ng-show="editing">
-                        
-                        <div class="tollbar pull-right">
-                            <button id="delete" ng-click="deleteItem()"><span class="glyphicon glyphicon-remove"></span></button>
-                            <button id="edit" ng-click="editing = !editing"><span class="glyphicon glyphicon-edit"></span></button>
-                        </div>
+
+                        <a class="edit-btn" ng-hide="editing" ng-click="editing = !editing">Edit</a>
+                        <a class="save-btn" ng-show="editing" ng-click="editing = !editing; saveTodo(item)">Save</a>
+                        <a class="delete-btn" ng-show="editing" ng-click="editing = !editing; deleteTodo(item, $index)">Delete</a>
+                        <button class="btn btn-primary pull-right" ng-click="item.completed = !item.completed; saveTodo(item)" ng-hide="editing">Done</button>
                     </div>
-                </div>
-                <div class="col-xs-2 checkbox">
-                    <button class="btn btn-lg btn-block">Done</button>
+
                 </div>
             </div>
         </div>
@@ -42,8 +62,9 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.js"></script>
     <script src="app.js"></script>
+    <script src="TodoService.js"></script>
 </body>
 
 </html>

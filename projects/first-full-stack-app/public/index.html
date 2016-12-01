@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+
+<head>
+    <meta charset="UTF-8">
+    <title>First Full Stack App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <nav class="navbar navbar-light">
+                <div class="header">
+                    <div class="company-title">
+                        <h1 class="brand">Pisces Tropical Fish</h1>
+                        <h1 class="logo">i</h1>
+                    </div>
+                </div>
+                <div class="col-xs-8">
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item"><a href="#/home" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="#/shop" class="nav-link">Shop</a></li>
+                        <li class="nav-item"><a href="#/guides" class="nav-link">Guides</a></li>
+                        <li class="nav-item"><a href="#/blog" class="nav-link">Blog</a></li>
+                        <li class="nav-item"><a href="#/about" class="nav-link">About</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-4">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="nav-item">
+                            <a href="#/sign-in" class="nav-link">Sign-In</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+        </div>
+    </div>
+
+    <div ng-view></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/components/services/GuidesService.js"></script>
+    <script src="js/components/services/FishService.js"></script>
+    <script src="js/components/services/ShopService.js"></script>
+    <script src="js/components/home/HomeController.js"></script>
+    <script src="js/components/shop/ShopController.js"></script>
+    <script src="js/components/guides/GuidesController.js"></script>
+</body>
+
+</html>

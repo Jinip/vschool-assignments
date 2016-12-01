@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-3 aside">
+            <ul class="guide-nav">
+                <li ng-repeat="guide in guidesNav">
+                    <a href="#/guides/{{ guide.url }}">{{ guide.title }}</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-xs-9 display">
+            <h1>{{ display.title }}</h1>
+            <h3>{{ display.subtitle }}</h3>
+            <p>{{ display.body }}</p>
+        </div>
+    </div>
+</div>

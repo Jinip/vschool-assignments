@@ -1,0 +1,48 @@
+input{
+    width: 100%;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.title{
+    text-align: center;
+}
+
+.panel-heading{
+    position: relative;
+}
+
+.edit-btn{
+    position: absolute;
+    top: 12px;
+}
+
+.edit-delete{
+    right: 15px;
+}
+
+.edit-save, .edit-edit{
+    right: 60px;
+}
+
+.vote-bar{
+    text-align: center;
+}
+
+.btn-danger, .btn-success, .upvotes, .downvotes, .total-votes{
+    display: inline;
+}
+
+.total-votes{
+    margin: 0 50px;
+}
+
+.upvotes{
+    margin-right: 10px;
+    color: #5CB85C;
+}
+
+.downvotes{
+    margin-left: 10px;
+    color: #D9534F;
+}

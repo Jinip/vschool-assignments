@@ -1,0 +1,19 @@
+<!--
+<div ng-repeat="ingredient in shoppingList">
+    <h3>{{ ingredient.name }}</h3>
+    <p>{{ ingredient.quantity}} {{ingredient.unit }}</p>
+</div>
+-->
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-10 col-xs-offset-2">
+            <ul ng-repeat="ingredient in shoppingList">
+                <li>
+                    {{ ingredient.name }} -- {{ ingredient.quantity }} {{ ingredient.unit }}
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
