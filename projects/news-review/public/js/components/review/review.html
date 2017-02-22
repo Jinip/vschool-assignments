@@ -1,0 +1,39 @@
+<div class="col-xs-7 col-xs-offset-1">
+    <h3>{{review.title}}</h3>
+    <h5>Reviewer: <a href="#/users/{{review.reviewed_by._id}}">{{review.reviewed_by.username}}</a></h5>
+    <h4>{{review.body}}</h4>
+</div>
+<div class="col-xs-3 page-score">
+    <h3 class="list-header">Rating</h3>
+    <div class="col-xs-12 score">
+        <h4>Total</h4> {{review.rating.total}}
+    </div>
+    <div class="col-xs-12 score">
+        <h5>Economic Bias</h5> {{review.rating.econ_bias.score}}
+    </div>
+    <div class="col-xs-12 score">
+        <h5>Social Bias</h5> {{review.rating.social_bias.score}}
+    </div>
+    <div class="col-xs-12 score">
+        <h5>Accuracy</h5> {{review.rating.accuracy.score}}
+    </div>
+    <div class="col-xs-12 score">
+        <h5>Complexity</h5> {{review.rating.score.complexity.score}}
+    </div>
+</div>
+<div class="col-xs-12">
+    <h3 class="list-header">Rating Breakdown</h3>
+    <div class="col-xs-10 col-xs-offset-1">
+        <h4>{{review.rating.econ_bias.score}} Economic Bias</h4>
+        <p>{{ review.rating.econ_bias.body }}</p>
+        
+        <h4>{{review.rating.social_bias.score}} Social Bias</h4>
+        <p>{{ review.rating.social_bias.body }}</p>
+        
+        <h4>{{review.rating.accuracy.score}} Accuracy</h4>
+        <p>{{ review.rating.accuracy.body }}</p>
+        
+        <h4>{{review.rating.complexity.score}} Complexity / Depth</h4>
+        <p>{{ review.rating.complexity.body }}</p>
+    </div>
+</div>

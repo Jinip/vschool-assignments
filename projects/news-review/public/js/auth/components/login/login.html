@@ -1,0 +1,18 @@
+<div class="col-xs-12 col-md-6 col-md-offset-3">
+    <form action="">
+       <label for="" class="btn-primary" id="banner">{{ banner }}</label>
+        <div class="form-group">
+            <label class="form-control-label" for="username">Username: </label>
+            <input type="text" id="username" ng-model="user.username" class="form-control">
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" for="password">Password: </label>
+            <input type="text" id="password" ng-model="user.password" class="form-control">
+        </div>
+        <div class="form-group has-danger">
+            <button class="btn btn-primary btn-block" id="login" ng-click="login(user)">Sign Up</button>
+            <label for="login" class="form-control-label form-control-danger" id="alert">{{ alert }}</label>
+        </div>
+        
+    </form>
+</div>
