@@ -21,10 +21,10 @@ var UserSchema = new Schema({
         },
         coordinate: Array
     },
-    reviews: {
+    reviews: [{
         type: Schema.Types.ObjectId,
         ref: "review"
-    }
+    }]
 })
 
 module.exports = mongoose.model("user", UserSchema);

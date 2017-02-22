@@ -35,7 +35,7 @@ app.service("APIService", ["$http", function($http){
     }
     
     /// PROFILES ///
-    this.getProfile = function(id){
-        return $http.get(url + "users/" + id);
+    this.getProfile = function(username){
+        return $http.get(url + "users/" + username);
     }
 }])

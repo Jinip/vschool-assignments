@@ -13,7 +13,7 @@ router.route("/signup/")
             if (user){
                 return res.send({success: false, message: "That user name is already taken"});
             }
-            
+
             bcrypt.hash(req.body.password, 10, function(err, hash){
                 if (err) return res.status(500).send(err);
                 
@@ -22,7 +22,7 @@ router.route("/signup/")
                 user.save(function(err, newUser){
                     if (err) return res.status(500).send(err);
 
-                    return res.send({success: true, message: "Created new user " + user.username, user: user});
+                    return res.send({success: true, message: "user" + newUser.username + " created successfully.", user: newUser.username});
                 })
             })
         })
@@ -45,7 +45,7 @@ router.route("/login/")
 
                     var token = jwt.sign(user.toObject(), config.secret);
                     
-                    return res.send({success: true, user: {id: user._id, username: user.username}, token: token});
+                    return res.send({success: true, user: user.username, token: token});
                 } else {
                     return res.send({success: false, message: "User name or password is incorrect"});
                 }

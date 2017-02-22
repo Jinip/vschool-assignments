@@ -1,8 +1,9 @@
 var app = angular.module("app");
 
 app.controller("ProfileController", ["$scope", "APIService", "$routeParams", function ($scope, APIService, $routeParams) {
-    APIService.getProfile($routeParams.userId)
+    APIService.getProfile($routeParams.username)
         .then(function(res){
-            $scope.profile = res.data;
+            console.log(res.data);
+            $scope.profile = res.data[0];
         })
 }])

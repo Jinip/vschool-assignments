@@ -32,11 +32,23 @@ router.route("/")
 
 router.route("/:id")
     .get(function(req, res){
-        User.findById(req.params.id, function(err, user){
-            if (err) return res.status(500).send(err);
-
-            return res.send(user);
-        })
+        console.log(req.params);
+        if (mongoose.Types.ObjectId.isValid(req.params.id)){
+            console.log("is valid");
+            User.findById(req.params.id).populate({path: "reviews", populate: {path: "article", model: "article"}}).exec(function(err, user){
+                if (err) return res.status(500).send(err);
+                console.log(user.reviews);
+                return res.send(user);
+            })
+        } else {
+            console.log("not valid");
+            User.find({username: req.params.id}).populate({path: "reviews", populate: {path: "article", model: "article"}}).exec(function(err, user){
+                if (err) return res.status(500).send(err);
+                console.log(user.reviews);
+                return res.send(user);
+            })
+        }
+        
     })
 
     .put(function(req, res){

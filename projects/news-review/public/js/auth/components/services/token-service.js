@@ -16,4 +16,5 @@ app.service("TokenService", [function(){
         localStorage.removeItem(userToken);
         return;
     }
+    
 }])

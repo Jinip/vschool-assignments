@@ -1,15 +1,15 @@
 <div class="col-xs-10 col-xs-offset-1">
     <div class="col-xs-12 col-md-6">
+        <h1>{{ profile.username }}</h1>
+        <h3>Political Viewpoint: {{ profile.viewpoint.name }}</h3>
+        <p>{{ blurb }}</p>
+    </div>
+    <div class="col-xs-12 col-md-6">
         <h2>Reviews</h2>
         <div ng-repeat="review in profile.reviews">
             <h2>{{ review.score }}</h2>
-            <h4>{{ review.title }}</h4>
-            <h6>On <a href="#/articles/{{ review.article.url }}">{{ review.article.name }}</a> Published By <a href="#/sites/{{ article.source.url }}">{{ review.article.source }}</a></h6>
+            <h4><a href="#/{{ review.article.source.url }}/{{ review.article.url }}/{{ review._id }}">{{ review.title }}</a></h4>
+            <h6>On <a href="#/{{ review.article.source.url }}/{{ review.article.url }}">{{ review.article.title }}</a> Published By <a href="#/{{ review.article.source.url }}/">{{ review.article.source.name }}</a></h6>
         </div>
-    </div>
-    <div class="col-xs-12 col-md-6">
-        <h1>{{ profile.username }}</h1>
-        <h3>Political Viewpoint: {{ profile.viewpoint }}</h3>
-        <p>{{ blurb }}</p>
     </div>
 </div>
