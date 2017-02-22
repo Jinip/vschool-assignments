@@ -9,14 +9,17 @@
         <li class="nav-item">
             <a class="nav-link" href="#about">About</a>
         </li>
-        <li ng-hide="isAuthenticated" class="nav-item">
+        <li ng-hide="UserService.isAuthenticated()" class="nav-item">
             <a href="#signup" class="nav-link">Signup</a>
         </li>
-        <li ng-hide="isAuthenticated" class="nav-item">
+        <li ng-hide="UserService.isAuthenticated()" class="nav-item">
             <a href="#login" class="nav-link">Login</a>
         </li>
-        <li ng-show="isAuthenticated" class="nav-item">
-            <a href="#profiles/{{user}}" class="nav-link">{{user}}</a>
+        <li ng-show="UserService.isAuthenticated()" class="nav-item">
+            <a href="#profiles/{{ UserService.getUser() }}" class="nav-link">{{ UserService.getUser() }}</a>
+        </li>
+        <li ng-show="UserService.isAuthenticated()" class="nav-item">
+            <a href="#logout" class="nav-link">Logout</a>
         </li>
     </ul>
     <!--

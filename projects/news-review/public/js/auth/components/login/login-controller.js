@@ -7,7 +7,7 @@ app.controller("LoginController", ["$scope", "UserService", "$location", functio
                 if (res.success === false){
                     $scope.alert = res.message;
                 } else {
-                    $location.path("/home/");
+                    $location.path("/");
                     UserService.user = {};
                 }
             })

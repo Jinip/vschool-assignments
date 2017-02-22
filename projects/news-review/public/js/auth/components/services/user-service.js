@@ -40,8 +40,6 @@ app.service("UserService", ["$http", "TokenService", "$location", function ($htt
     }
 
     this.getUser = function () {
-        var user = localStorage.getItem(username);
-
-        return user ? user : false;
+        return localStorage.getItem(username);
     }
 }])
