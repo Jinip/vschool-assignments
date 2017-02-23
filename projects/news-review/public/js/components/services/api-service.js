@@ -25,6 +25,10 @@ app.service("APIService", ["$http", function($http){
         return $http.get(url + "articles/?url=" + articleUrl);
     }
     
+    this.getArticlesBySourceUrl = function(sourceUrl){
+        return $http.get(url + "articles/?source.url=" + sourceUrl);
+    }
+    
     /// REVIEWS ///
     this.getAllReviews = function(){
         return $http.get(url + "reviews");
@@ -32,6 +36,10 @@ app.service("APIService", ["$http", function($http){
     
     this.getReview = function(id){
         return $http.get(url + "reviews/" + id);
+    }
+    
+    this.postReview = function(newReview){
+        return $http.post(url + "reviews/", newReview);
     }
     
     /// PROFILES ///

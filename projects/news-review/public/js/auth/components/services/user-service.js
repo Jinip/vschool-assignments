@@ -33,7 +33,6 @@ app.service("UserService", ["$http", "TokenService", "$location", function ($htt
     }
 
     this.isAuthenticated = function () {
-        console.log("authenticating")
         var token = TokenService.getToken();
 
         return token ? true : false;

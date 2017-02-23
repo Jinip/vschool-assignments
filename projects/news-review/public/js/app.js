@@ -18,6 +18,10 @@ app.config(["$routeProvider", function($routeProvider){
             templateUrl: "js/components/profile/profile.html",
             controller: "ProfileController"
         })
+        .when("/new-review/", {
+            templateUrl: "js/components/new-review/new-review.html",
+            controller: "NewReviewController"
+        })
         .when("/:siteUrl/", {
             templateUrl: "js/components/site/site.html",
             controller: "SiteController"
