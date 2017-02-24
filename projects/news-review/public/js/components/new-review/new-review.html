@@ -1,1 +1,32 @@
-{{ siteList }}
+<div class="col-xs-12">
+    <form action="">
+        <div class="form-group">
+            <label for="" class="form-control-label">Select Source</label>
+            <select name="" id="sourceSelect" class="custom-select" ng-model="selectedSite" ng-options="site.name for site in siteList">
+                <option value="">Select</option>
+            </select>
+        </div>
+        
+        <div ng-show="selectedSite" class="form-group">
+            <label for="" class="form-control-label">Select Article</label>
+            <select name="" id="articleSelect" class="custom-select" ng-model="selectedArticle" ng-options="article.title for article in selectedSite.articles">
+                <option value="">Select</option>
+            </select>
+            <button class="btn btn-primary" ng-click="addingArticle = !addingArticle">Add New Article</button>
+        </div>
+        
+        <div ng-show="addingArticle">
+            <div class="form-group">
+                <label for="">Article Title</label>
+                <input type="text" name="" id="" ng-model="newArticle.title">
+            </div>
+            <div class="form-group">
+                <label for="">Link</label>
+                <input type="text" name="" id="" ng-model="newArticle.link">
+            </div>
+            <div class="form-group">
+                <button class="btn btn-primary" ng-click="submitArticle(newArticle); addingArticle = !addingArticle; newArticle = {}">Submit Article</button>
+            </div>
+        </div>
+    </form>
+</div>

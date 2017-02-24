@@ -26,14 +26,17 @@ router.route("/")
     })
 
     .post(function (req, res) {
+        console.log(req.body);
         var article = new Article(req.body);
 
         article.save(function (err, newArticle) {
             if (err) return res.status(500).send(err);
             
-            Site.findByIdAndUpdate(newArticle.company, {$push: {"articles": newArticle._id}}, function(err, site){
+            console.log(newArticle.source.name);
+            
+            Site.findOneAndUpdate({name: newArticle.source.name}, {$push: {"articles": newArticle._id}}, function(err, site){
                 if (err) return res.status(500).send(err);
-                
+                console.log(site);
                 res.send(newArticle);
             })
         })

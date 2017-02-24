@@ -21,6 +21,10 @@ app.service("APIService", ["$http", function($http){
         return $http.get(url + "articles");
     }
     
+    this.postArticle = function(newArticle){
+        return $http.post(url + "articles", newArticle);
+    }
+    
     this.getArticleByUrl = function(articleUrl){
         return $http.get(url + "articles/?url=" + articleUrl);
     }

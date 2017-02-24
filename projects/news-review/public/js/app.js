@@ -22,15 +22,15 @@ app.config(["$routeProvider", function($routeProvider){
             templateUrl: "js/components/new-review/new-review.html",
             controller: "NewReviewController"
         })
-        .when("/:siteUrl/", {
+        .when("/sources/:siteUrl/", {
             templateUrl: "js/components/site/site.html",
             controller: "SiteController"
         })
-        .when("/:siteUrl/:articleUrl/", {
+        .when("/sources/:siteUrl/:articleUrl/", {
             templateUrl: "js/components/article/article.html",
             controller: "ArticleController"
         })
-        .when("/:siteUrl/:articleUrl/:reviewId", {
+        .when("/sources/:siteUrl/:articleUrl/:reviewUrl", {
             templateUrl: "js/components/review/review.html",
             controller: "ReviewController"
         })
