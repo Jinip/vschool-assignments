@@ -3,7 +3,8 @@ var mongoose = require("mongoose");
 
 var router = express.Router();
 var Review = require("../models/review.js");
-var Article = require("../models/article.js")
+var Article = require("../models/article.js");
+var User = require("../models/user.js");
 
 router.route("/")
     .get(function (req, res) {
@@ -33,14 +34,18 @@ router.route("/")
 
     .post(function (req, res) {
         var review = new Review(req.body);
-
+        review.reviewed_by = req.user._id;
         review.save(function (err, newReview) {
             if (err) return res.status(500).send(err);
             
             Article.findByIdAndUpdate(newReview.article, {$push: {"reviews": newReview._id}}, function(err, article){
                 if (err) return res.status(500).send(err);
                 
-                res.send(newReview);
+                User.findByIdAndUpdate(req.user._id, {$push: {"reviews": newReview._id}}, function(err, user){
+                    if (err) return res.status(500).send(err);
+                    
+                    res.send(newReview);
+                })
             })
         })
     })

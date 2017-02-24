@@ -40,13 +40,15 @@ app.controller("NewReviewController", ["$scope", "APIService", "$routeParams", "
             })
     }
 
-    $scope.addReview = function (newReview) {
+    $scope.submitReview = function (newReview) {
+        newReview.article = $scope.selectedArticle._id;
         APIService.postReview(newReview)
             .then(function (res) {
+                console.log(res);
                 if (!res.data.success) {
                     $scope.reviewAlert = res.data.message;
                 } else {
-                    $location.path(selectedSite.url + "/" + selectedArticle.url + "/" + res.data._id);
+//                    $location.path(selectedSite.url + "/" + selectedArticle.url + "/" + res.data._id);
                 }
             })
     }

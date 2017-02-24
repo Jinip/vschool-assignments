@@ -28,5 +28,42 @@
                 <button class="btn btn-primary" ng-click="submitArticle(newArticle); addingArticle = !addingArticle; newArticle = {}">Submit Article</button>
             </div>
         </div>
+        
+        <div ng-show="selectedArticle">
+            <h3>Review</h3>
+            <div class="form-group">
+                <label for="">Review Title</label>
+                <input type="text" class="form-control" ng-model="newReview.title">
+            </div>
+            <div class="form-group">
+                <label for="">Review Body</label>
+                <textarea class="form-control" rows="10" ng-model="newReview.body"></textarea>
+            </div>
+            <br>
+            <h4>Rating</h4>
+            <div class="form-group">
+                <label for="">Economic Bias (out of 5)</label>
+                <input type="number" ng-model="newReview.rating.econBias.score">
+                <textarea class="form-control" rows="5" ng-model="newReview.rating.econBias.body"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="">Social Bias (out of 5)</label>
+                <input type="number" ng-model="newReview.rating.socialBias.score">
+                <textarea class="form-control" rows="5" ng-model="newReview.rating.socialBias.body"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="">Accuracy (out of 5)</label>
+                <input type="number" ng-model="newReview.rating.accuracy.score">
+                <textarea class="form-control" rows="5" ng-model="newReview.rating.accuracy.body"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="">Complexity (out of 5)</label>
+                <input type="number" ng-model="newReview.rating.complexity.score">
+                <textarea class="form-control" rows="5" ng-model="newReview.rating.complexity.body"></textarea>
+            </div>
+            <div class="form-group">
+                <button class="btn btn-primary" ng-click="submitReview(newReview)">Submit Review</button>
+            </div>
+        </div>
     </form>
 </div>

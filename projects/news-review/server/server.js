@@ -15,7 +15,7 @@ app.use(morgan("dev"));
 app.use(express.static(path.join(__dirname, "..", "public")));
 
 app.use("/auth/", require("./routes/authRoute"));
-app.use("/api/users/", expressJwt({secret: config.secret}));
+app.use("/api/", expressJwt({secret: config.secret}));
 app.use("/api/users/", require("./routes/userRoute"));
 app.use("/api/sites/", require("./routes/siteRoute"));
 app.use("/api/reviews/", require("./routes/reviewRoute"));
