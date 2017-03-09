@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Super Mario Pest Control</title>
+        <meta name="viewport" content="width=device-width">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="styles.css" rel="stylesheet"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4">
+                    <header>
+                        <h1 class="header"><span class="blue">S</span><span class="yellow">U</span><span class="red">P</span><span class="green">E</span><span class="yellow">R</span> <span class="red">M</span><span class="green">A</span><span class="yellow">R</span><span class="blue">I</span><span class="green">O</span> <span class="red">P</span><span class="green">E</span><span class="blue">S</span><span class="red">T</span> <span class="blue">C</span><span class="green">O</span><span class="blue">N</span><span class="red">T</span><span class="yellow">R</span><span class="green">O</span><span class="blue">L</span></h1>
+                    </header>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-5">
+                    <img class="hidden-xs coin" src="http://vignette3.wikia.nocookie.net/wii/images/9/90/600px-NSMBwii_coin-1-.jpg/revision/latest?cb=20100525233255" />
+                    <p class="baddieVal hidden-xs">5</p>
+                    <div class="img-container">
+                        
+                        <div id="goomTally" class="tally hidden-xs"></div>
+                        
+                        <img class="hidden-xs" src="Goomba.png"/>
+                    </div>
+                    <div class="btn-danger btn-lg btn-block">
+                        <img class="visible-xs pull-left mini" src="Goomba.png"/>
+                        <p>Goomba</p>
+                        <p class= "x">x</p>
+                        <p id="goomTallyXS" class="tally-xs"></p>
+                        
+                        <button class="btn btn-default pull-right add" type="submit"><span class="glyphicon glyphicon-plus"></span></button>
+                        
+                        <button class="btn btn-default pull-right subtract" type="submit"><span class="glyphicon glyphicon-minus"></span></button>
+
+                    </div>
+                </div>
+                <div class="col-sm-5">
+                    <img class="hidden-xs coin" src="http://vignette3.wikia.nocookie.net/wii/images/9/90/600px-NSMBwii_coin-1-.jpg/revision/latest?cb=20100525233255" />
+                    <p class="baddieVal hidden-xs">7</p>
+                    <div class="img-container">
+                        
+                        <div id="bombTally" class="tally hidden-xs"></div>
+                        
+                        <img class="hidden-xs" src="Bobomb.jpg"/>
+                    </div>
+                    <div class=" btn-danger btn-lg btn-block">
+                        <img class="visible-xs pull-left mini" src="Bobomb.jpg"/>
+                        <p>Bob Omb</p>
+                        <p class= "x">x</p>
+                        
+                        <p id="bombTallyXS" class="tally-xs"></p>
+                        
+                        <button class="btn btn-default pull-right add" type="submit"><span class="glyphicon glyphicon-plus"></span></button>
+                        
+                        <button class="btn btn-default pull-right subtract" min type="submit"><span class="glyphicon glyphicon-minus"></span></button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-5">
+                    <img class="hidden-xs coin" src="http://vignette3.wikia.nocookie.net/wii/images/9/90/600px-NSMBwii_coin-1-.jpg/revision/latest?cb=20100525233255" />
+                    <p class="baddieVal hidden-xs">11</p>
+                    <div class="img-container">
+                        
+                        <div id="cheepTally" class="tally hidden-xs"></div>
+                        
+                        <img class="hidden-xs" src="CheepCheep.png"/>
+                    </div>
+                    <div class="btn-danger btn-lg btn-block">
+                        <img class="visible-xs pull-left mini" src="CheepCheep.png"/>
+                        <p class="cheep-cheep">Cheep Cheep</p>
+                        <p class= "x">x</p>
+                        
+                        <p id="cheepTallyXS" class="tally-xs"></p>
+                        
+                        <button class="btn btn-default pull-right add" type="submit"><span class="glyphicon glyphicon-plus"></span></button>
+                        
+                        <button class="btn btn-default subtract" type="submit"><span class="glyphicon glyphicon-minus"></span></button>
+
+                    </div>
+                </div>
+                <div class="col-sm-5 tally-box">
+                    <div class="img-container">
+                        <div id="peachTally" class="tally hidden-xs">0</div>
+                        <img class="hidden-xs" src="Peach.jpg"/>
+                    </div>
+                    <div class="btn-danger btn-lg btn-block">
+                        <img class="visible-xs pull-left mini" src="Peach.jpg"/>
+                        <p>Total:</p>
+                        <img class="visible-xs pull-right mini" src="http://vignette3.wikia.nocookie.net/wii/images/9/90/600px-NSMBwii_coin-1-.jpg/revision/latest?cb=20100525233255" />
+                        <img class="pull-right total-coin hidden-xs" src="http://vignette3.wikia.nocookie.net/wii/images/9/90/600px-NSMBwii_coin-1-.jpg/revision/latest?cb=20100525233255" />
+                        <p class= "total-x pull-right">x</p>
+                        <p id="bill" class="pull-right">0</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-10">
+                    <footer class="btn-danger btn-lg btn-block">
+                        <p>Email: mario@curbstompditalia.com</p>
+                        <p>Website: curbstompditalia.com</p>
+                        <p>Address: 1981 Toadstool Circle, Mushroom Kingdom</p>
+                    </footer>
+                </div>
+            </div>
+        </div>
+<<<<<<< HEAD
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+=======
+>>>>>>> abaf8f33f4704c69e94eaf6d3fb54ec4da27173d
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="script.js" ></script>
+    </body>
+</html>
