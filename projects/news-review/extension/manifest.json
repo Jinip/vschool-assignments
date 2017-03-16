@@ -1,0 +1,14 @@
+{
+    "name": "News Review",
+    "version": 1,
+    "manifest_version": 2,
+    "description": "Add review data from News Review to social media posts and search engine results",
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_title": "News Review",
+        "default_popup": "extension.html"
+    },
+    "icons": {
+        "128": "icon.png"
+    }
+}

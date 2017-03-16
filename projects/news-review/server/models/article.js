@@ -34,7 +34,7 @@ var articleSchema = new Schema({
         total: {
             type: Number
         },
-        economic_bias: {
+        econ_bias: {
             type: Number
         },
         social_bias: {

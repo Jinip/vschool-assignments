@@ -8,8 +8,8 @@
         <h2>Reviews</h2>
         <div ng-repeat="review in profile.reviews">
             <h2>{{ review.score }}</h2>
-            <h4><a href="#/{{ review.article.source.url }}/{{ review.article.url }}/{{ review._id }}">{{ review.title }}</a></h4>
-            <h6>On <a href="#/{{ review.article.source.url }}/{{ review.article.url }}">{{ review.article.title }}</a> Published By <a href="#/{{ review.article.source.url }}/">{{ review.article.source.name }}</a></h6>
+            <h4><a href="#/sources/{{ review.article.source.url }}/{{ review.article.url }}/{{ review._id }}">{{ review.title }}</a></h4>
+            <h6>On <a href="#/sources/{{ review.article.source.url }}/{{ review.article.url }}">{{ review.article.title }}</a> Published By <a href="#/sources/{{ review.article.source.url }}/">{{ review.article.source.name }}</a></h6>
         </div>
     </div>
 </div>

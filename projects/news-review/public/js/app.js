@@ -30,7 +30,7 @@ app.config(["$routeProvider", function($routeProvider){
             templateUrl: "js/components/article/article.html",
             controller: "ArticleController"
         })
-        .when("/sources/:siteUrl/:articleUrl/:reviewUrl", {
+        .when("/sources/:siteUrl/:articleUrl/:reviewId", {
             templateUrl: "js/components/review/review.html",
             controller: "ReviewController"
         })
