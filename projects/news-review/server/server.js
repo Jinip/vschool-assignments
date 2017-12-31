@@ -1,6 +1,6 @@
 var express = require("express");
 var path = require("path");
-var port = process.env.port || 8080;
+var port = 80;
 var config = require("./config");
 var bodyParser = require("body-parser");
 var jwt = require("jsonwebtoken");
